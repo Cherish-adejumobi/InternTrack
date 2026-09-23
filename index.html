@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>InternTrack</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- LOGIN PAGE -->
+    <section id="login-page">
+        <h1>InternTrack</h1>
+        <p>Student Internship and Performance Tracker</p>
+
+        <h2>Login</h2>
+
+        <form id="login-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+<!-- MAIN tracker page -->
+    <div id="tracker-page">
+
+        <h1>InternTrack</h1>
+        <p>Student Internship and Performance Tracker.</p>
+<!--Cherish come back to this-->
+        <nav class="navbar">
+    <a href="#" id="dashboard-link">Dashboard</a>
+    <a href="#" id="activities-link">Activities</a>
+    <a href="#" id="skills-link">Skills</a>
+    <a href="#" id="performance-link">Performance</a>
+    <a href="#" id="logout-button">Logout</a>
+</nav>
+
+        <main>
+
+            <!-- this should be the dashboard area -->
+            <section id="dashboard-section" >
+                <h2>Welcome to InternTrack</h2>
+                <p>
+                    Track your internship journey, monitor your progress,
+                    and build your skills.
+                </p>
+            </section>
+<!-- Internship Overview -->
+            <section>
+                <h2>Internship Overview</h2>
+
+                <div class="stat-card">
+                    <h3>Internship Progress</h3>
+                    <p>0%</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Tasks Completed</h3>
+                    <p>0</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Skills Learned</h3>
+                    <p>0</p>
+                </div>
+            </section>
+
+
+            <!-- fixed Activities -->
+            <section id="activities-section">
+                <h2>Recent Activities</h2>
+
+                <div class="activity-card">
+                    <h3>Built Calculator Interface</h3>
+                    <p>
+                        Created a simple calculator interface using HTML and CSS.
+                    </p>
+                    <p>Status: Completed</p>
+                </div>
+
+                <div class="activity-card">
+                    <h3>Learned HTML Forms</h3>
+                    <p>
+                        Practiced creating forms and collecting user input.
+                    </p>
+                    <p>Status: Completed</p>
+                </div>
+
+                <h3>Add New Activity</h3>
+
+                <form id="activity-form">
+                    <label for="activity">Activity</label>
+                    <input type="text" id="activity" name="activity">
+
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description"></textarea>
+
+                    <button type="submit">Add Activity</button>
+                </form>
+            </section>
+            <!--attendance-->
+<section>
+    <h2>Attendance</h2>
+
+    <div class="attendance-card">
+        <h3>Attendance Rate</h3>
+        <p id="attendance-rate">0%</p>
+    </div>
+
+    <div class="attendance-card">
+        <h3>Days Present</h3>
+        <p id="days-present">0</p>
+    </div>
+
+    <div class="attendance-card">
+        <h3>Days Absent</h3>
+        <p id="days-absent">0</p>
+    </div>
+
+    <h3>Record Attendance</h3>
+
+    <button id="present-button">Present</button>
+    <button id="absent-button">Absent</button>
+</section>
+
+            <!-- Activity Status -->
+            <section>
+                <h2>Activity Status</h2>
+<div class="activity-card">
+    <h3>Built Calculator Interface</h3>
+
+    <p>
+        Created a simple calculator interface using HTML and CSS.
+    </p>
+
+    <p>Status: Completed</p>
+
+    <p>
+        <strong>Supervisor Feedback:</strong>
+        Good work. Continue improving your web development skills.
+    </p>
+</div>
+  <div class="activity-card">
+    <h3>Learned HTML Forms</h3>
+
+    <p>
+        Practiced creating forms and collecting user input.
+    </p>
+
+    <p>Status: Completed</p>
+
+    <p>
+        <strong>Supervisor Feedback:</strong>
+        Good progress. Keep practicing and documenting what you learn.
+    </p>
+</div>              
+  </section>
+
+
+            <!-- Skills Learned -->
+            <section id="skills-section">
+                <h2>Skills Learned</h2>
+
+                <div class="skill-card">
+                    <p>HTML</p>
+                </div>
+
+                <div class="skill-card">
+                    <p>CSS</p>
+                </div>
+
+                <div class="skill-card">
+                    <p>JavaScript</p>
+                </div>
+
+                <div class="skill-card">
+                    <p>Data Analysis</p>
+                </div>
+            </section>
+
+
+            <!-- Current Project -->
+            <section>
+                <h2>Current Project</h2>
+
+                <div class="project-card">
+                    <h3>Internship Tracker</h3>
+                    <p>
+                        Building an internship tracking system to monitor
+                        activities, attendance, skills, progress, and feedback.
+                    </p>
+                </div>
+            </section>
+
+           <section id="performance-section">
+    <h2>Internship Progress</h2>
+
+    <div class="progress-card">
+        <p>Overall Progress</p>
+
+        <p id="overall-progress">0%</p>
+
+        <p class="internship-dates">
+            24 August 2026 — 14 October 2026
+        </p>
+
+        <div class="progress-bar">
+    <div id="overall-progress-bar" class="progress-fill"></div>
+        </div>
+    </div>
+</section>
+<!--Cherish  don't forget to add the timeline here.-->
+      <!--  Timeline -->
+            <section>
+                <h2>Internship Timeline</h2>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <h3>Started Internship</h3>
+                        <p>24 August 2026</p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Learned HTML & CSS</h3>
+                        <p>
+                            Completed the basics and built a calculator interface.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Next Step</h3>
+                        <p>
+                            Continue improving my technical and data analysis skills.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+<!--not sure about this yet-->
+            <!-- Next Steps -->
+            <section>
+                <h2>Next Steps</h2>
+
+                <div class="next-steps-card">
+                    <p>
+                        Continue improving my HTML, CSS, and JavaScript skills.
+                    </p>
+
+                    <p>
+                        Practice more data analysis with Excel and Power BI.
+                    </p>
+
+                    <p>
+                        Build more projects to strengthen my technical skills.
+                    </p>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
+
