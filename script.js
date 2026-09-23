@@ -205,7 +205,6 @@ const endDate = new Date(2026, 9, 14);
 const today = new Date();
 
 let overallPercentage;
-s
 if (today < startDate) {
     overallPercentage = 0;
 } else if (today >= endDate) {
